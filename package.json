@@ -1,0 +1,23 @@
+{
+  "name": "gulp-pretty-html",
+  "version": "1.0.1",
+  "description": "Plugin Gulp for decorating HTML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "pretty",
+    "html"
+  ],
+  "author": {
+    "name": "Legostaev Vadim",
+    "email": "legostaev.vadim@mail.ru"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "pretty": "^2.0.0",
+    "through2": "^2.0.3"
+  }
+}
