@@ -80,9 +80,9 @@ gulp.task('pages', function () {
 
 ```js
 .pipe(prettyHtml({
-    unformatted: ["code", "pre", "em", "strong", "i", "b", "br", "span"],
+    indent_size: 4,
     indent_char: " ",
-    indent_size: 4
+    unformatted: ["code", "pre", "em", "strong", "i", "b", "br", "span"]
 }))
 ```
 
