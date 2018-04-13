@@ -8,7 +8,7 @@ Plugin **Gulp** for decorating **HTML**
 npm install gulp-pretty-html --save-dev
 ```
 
-## Setup 1
+## Setup
 
 ```js
 var gulp = require('gulp');
@@ -16,21 +16,6 @@ var prettyHtml = require('gulp-pretty-html');
 
 gulp.task('pages', function () {
     return gulp.src('app/**/*.html')
-        .pipe(prettyHtml())
-        .pipe(gulp.dest('dist'));
-});
-```
-
-## Setup 2
-
-```js
-var gulp = require('gulp');
-var pug = require('gulp-pug');
-var prettyHtml = require('gulp-pretty-html');
-
-gulp.task('pages', function () {
-    return gulp.src('app/**/*.pug')
-        .pipe(pug())
         .pipe(prettyHtml())
         .pipe(gulp.dest('dist'));
 });
@@ -76,7 +61,7 @@ gulp.task('pages', function () {
 
 ## Options
 
-**default**
+**Default**
 
 ```js
 .pipe(prettyHtml({
@@ -86,7 +71,7 @@ gulp.task('pages', function () {
 }))
 ```
 
-**all js-beautify**
+**HTML: js-beautify**
 
 ```
   indent_size                  Indentation size [4]
