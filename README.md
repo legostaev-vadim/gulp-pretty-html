@@ -61,13 +61,13 @@ gulp.task('pages', function () {
 
 ## Options
 
-**Default**
+**Custom**
 
 ```js
 .pipe(prettyHtml({
     indent_size: 4,
-    indent_char: " ",
-    unformatted: ["code", "pre", "em", "strong", "i", "b", "br", "span"]
+    indent_char: ' ',
+    unformatted: ['code', 'pre', 'em', 'strong', 'span']
 }))
 ```
 
