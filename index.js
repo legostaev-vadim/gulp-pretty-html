@@ -1,4 +1,4 @@
-const beautify = require('js-beautify'),
+const beautify_html = require('js-beautify').html,
     through2 = require('through2').obj;
 
 
@@ -13,7 +13,7 @@ module.exports = function(options = {}) {
         if (file.isNull()) return callback(null, file);
         if (file.isStream()) return callback(new Error('gulp-pretty-html: Streaming not supported'));
 
-        file.contents = Buffer.from(beautify.html(file.contents.toString(), options));
+        file.contents = Buffer.from(beautify_html(file.contents.toString(), options));
 
         callback(null, file);
 
